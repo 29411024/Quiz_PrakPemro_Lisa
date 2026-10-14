@@ -25,13 +25,13 @@ class Peserta:
     def hitung_grade(self):
         nilai = self.hitung_nilai_akhir()
 
-        if nilai >= 85:
+        if 85 <= nilai <= 100:
             return "A"
-        elif nilai >= 75:
+        elif 75 <= nilai < 85:
             return "B"
-        elif nilai >= 65:
+        elif 65 <= nilai < 75:
             return "C"
-        elif nilai >= 50:
+        elif 50 <= nilai < 65:
             return "D"
         else:
             return "E"
